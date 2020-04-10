@@ -29,16 +29,19 @@ Upon completion of a successful input file generation, the resulting JSON file w
       * 'Best' is defined in detail in the genome_record_retrieval() function,
        but generally, complete RefSeq genomes are most desired.
        
-  * Once all pieces of information are collected, they are organized into 
-     a dictionary of dictionaries, where the main, 'outer', key is the protein
-     accession ID of the HSP, and all the genome and CDS information is stored
-     in a dictionary as the value for the HSP
-     ex.
-      { 'ZZ_123456.7' : { 'genome_accession' : 'AA_987654.3', 
-                          'start_pos : 1234,
-                          'stop_pos : 5678,
-                          'strand : '+',
-                          'p_score' : 7}}
+  * Once all pieces of information are collected, they are organized into a dictionary of dictionaries, where the main, 'outer', key is the protein accession ID of the HSP, and all the genome and CDS information is stored in a dictionary as the value for the HSP 
+     * ex.
+      ``` 
+      { 'ZZ_123456.7' :{
+                       'genome_accession' : 'AA_987654.3',
+                       'start_pos' : 1234,
+                       'stop_pos': 5678,
+                       'strand': '+',
+                       'p_score':7
+	                   }
+      }
+      ```
+	 
   * Following genome retrieval, the Entrez database is then searched for any 
     unidentified genome records such as plasmids for complete records and contig
     records for WGS records
