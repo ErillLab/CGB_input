@@ -49,7 +49,7 @@ Upon completion of a successful input file generation, the resulting JSON file w
        indicate which of the three method(s) in the input_parameters section
        of the input file. (see test_input.md)
        
-       * METHODS
+       * **METHODS**
          1. Select only one genome record per taxonomic level (e.g. genus)
 	
          2. Select only records for HSPs with pair-wise promoter region identities below a user-specified threshold (e.g. 90% identity)
