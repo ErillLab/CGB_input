@@ -2106,4 +2106,4 @@ def cgb_input(inputfile_name):
 
     return output
 
-final = cgb_input(input_filepath)
+final = cgb_input(INPUT_FILEPATH)
