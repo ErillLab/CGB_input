@@ -2,8 +2,6 @@
     "TF": "LexA",
     "motifs": [
 	{
-	    "name": "LexA_Mtu",
-            "genome_accessions": ["NC_000962.3"],
             "protein_accession": "NP_217236.2",
             "sites": [
                 "AAATCGAACATGTGTTCGAGTA",
@@ -58,8 +56,6 @@
             ]
         },
         {
-	    "name": "LexA_Cgl",
-            "genome_accessions": ["NC_006958.1"],
             "protein_accession": "WP_003857389.1",
             "sites": [
                 "TATGCGAACGTTTTTTCTAAAT",
@@ -97,8 +93,6 @@
             ]
         },
         {
-	    "name": "LexA_Lmo",
-            "genome_accessions": ["NC_003210.1"],
             "protein_accession": "NP_464827.1",
             "sites": [
                 "AAAAAGAATGTATGTTCGCTTT",
@@ -121,8 +115,6 @@
             ]
         },
         {
-	    "name": "LexA_Sau",
-            "genome_accessions": ["NC_007795.1"],
             "protein_accession": "WP_001208760.1",
             "sites": [
                 "AAATAGAACACGTGTTCGTATA",
@@ -138,8 +130,6 @@
             ]
         },
         {
-	    "name": "LexA_Bsu",
-            "genome_accessions": ["NC_000964.3"],
             "protein_accession": "NP_389668.1",
             "sites": [
                 "TTACAGAACATTTGTTCCTCAC",
@@ -185,8 +175,6 @@
             ]
         },
         {
-	    "name": "LexA_Cdi",
-            "genome_accessions": ["NC_009089.1", "NC_008226.1"],
             "protein_accession": "WP_003433043.1",
             "sites": [
                 "TCTGCAAACATTTGTTCCTGAT",
@@ -227,6 +215,8 @@
      "outputfile_name": "output_test.json"
    },
 
+    "cgb_parameters":
+    {
      "prior_regulation_probability" : 0.03,
      "alpha" : 0.00285714285714,
      "promoter_up_distance" : 300,
@@ -260,5 +250,5 @@
      "maxCOG" : 2,
      "maxNOG" : 2,
      "maxPFAM" : 2
-    },
+    }
 }
