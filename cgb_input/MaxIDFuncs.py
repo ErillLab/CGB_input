@@ -45,10 +45,7 @@ def genome_record_to_seq(grecord, upstream, downstream, sleepy):
     
     gnome_record = SeqIO.read(net_handle, "fasta")
 
-    time.sleep(sleepy)
-
     return gnome_record
-
 
 ######################################################################
 def id_below_maxid_perc(el1, el2, max_percent_id):
