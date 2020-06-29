@@ -38,6 +38,7 @@ def genome_record_to_seq(grecord, upstream, downstream, sleepy):
             print 'NCBI exception raised. Reattempt iteration: ' + str(cnt + 1)
 
             if cnt == 4:
+                
                 print 'Could not download record after 5 attempts'
     
                 return None
@@ -81,11 +82,11 @@ def id_below_maxid_perc(el1, el2, max_percent_id):
     # return true or false depending on percent identity
     if perID <= float(max_percent_id):
 
-        return (True)
+        return True
 
     else:
 
-        return (False)
+        return False
 
 
 def identity_filter_list(orthos, percent_id):
@@ -109,15 +110,14 @@ def identity_filter_list(orthos, percent_id):
     cnt = 0
 
     while cnt < len(item_list):
+        
         # get next first element in upstream seq list, removing it from list
-
         current_item = item_list.pop(0)
 
         # and add it to the filtered list
-
         filt_list.append(current_item)
 
-        # check against all remaining elements in item_list; remove them from22
+        # check against all remaining elements in item_list; remove them from
         # the list if they are not below threshold of identity
         # at each pass revised item_list hence contains only elements less
         # than %ID  identical to previously processed elements now stored in
@@ -138,6 +138,7 @@ def maxID_filt(maxID, prefilt_orthologs, up_region, dw_region, sleepy):
     print 'Obtaining upstream nucleotide sequences for homologs'
 
     for ortholog in prefilt_orthologs:
+        
         print '  |-> Grabbing upstream nucleotide sequence for: ' + ortholog
 
         # grab the sequence corresponding to that record
