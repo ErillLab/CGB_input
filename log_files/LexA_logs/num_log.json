@@ -1,0 +1,14 @@
+{
+  "num orthologs before processing": 750,
+  "num orthologs removed in genome retrieval": 2,
+  "num orthologs removed in contig accessions": 5,
+  "num orthologs removed in genome retrieval or contig accessions (unclear)": 1,
+  "num orthologs remaining post-contig_accessions, pre-filters": 742,
+  "total num orthologs removed before filters": 8,
+  "orthologs lost due to taxon filtering": 736,
+  "orthologs remaining after taxon filtering": 4,
+  "num orthologs remaining pre-maxID filter": 4,
+  "num orthologs removed by maxID filter": 0,
+  "num orthologs remaining post-maxID filter": 4,
+  "other": 736
+}

@@ -1,3 +1,8 @@
-from cgb_input.cgb_input import cgb_input_main
+from cgb_input import create_file
 
-input_file = cgb_input_main('test_input.json')
+input_file = 'pseudomonadales_test.json'
+
+input_file = create_file(input_file)
+
+with open('orthologs.json') as f:
+    orth = json.load(f)
