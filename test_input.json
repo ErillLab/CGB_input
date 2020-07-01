@@ -200,8 +200,8 @@
   "input_parameters":
    {   
      "BLAST_eval": 1e-40,
-     "BLAST_dbase":"nr",
-     "max_hits": 50,
+     "BLAST_dbase":"refseq_protein",
+     "max_hits": 25,
      "selected_taxon": "genus",
      "maxID": 0.90,
      "up_region": 250,
@@ -233,7 +233,7 @@
      "network_size_plot" : false,
      "site_printout" : false,
      "entrez_email" : "tu06379@umbc.edu",
-     "entrez_apikey" : "",
+     "entrez_apikey" : "683580e2704031740187a361b299e9c50007",
      "sleep" : 1.5,
      "TF_eval" : 0.00000000001,
      "homolog_eval" : 0.1,

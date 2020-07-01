@@ -497,12 +497,6 @@ def cgb_input_main(inputfile_name):
     with open(others_log, 'w') as f:
 
         json.dump(log_file, f, indent=2)
+
     return output
 
-### ENTER YOUR INPUT FILE PATH HERE ###
-# =====================================
-inputfile_name = '/Users/shanehumphrey/anaconda3/envs/new/pseudomonadales_test.json'
-# =====================================
-# ### ENTER YOUR INPUT FILE PATH HERE ###
-
-final = cgb_input_main(inputfile_name)
