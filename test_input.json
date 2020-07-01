@@ -1,5 +1,5 @@
 {
-    "TF": "LexA",
+    "TF": "LexA_test_input",
     "motifs": [
 	{
             "protein_accession": "NP_217236.2",
@@ -201,15 +201,15 @@
    {   
      "BLAST_eval": 1e-40,
      "BLAST_dbase":"nr",
-     "max_hits": 25,
-     "selected_taxon": "species",
-     "maxID": 0.95,
+     "max_hits": 50,
+     "selected_taxon": "genus",
+     "maxID": 0.90,
      "up_region": 250,
      "dw_region": 50,
      "tax_ID": null,
      "min_cover": 0.8,
      "sleepy": 0.5,
-     "TF_family": "LexA",
+     "TF_family": "LexA_input_test",
      "outputfile_name": "output_test.json"
    },
 
@@ -232,8 +232,8 @@
      "taxon_regulation_plot" : false,
      "network_size_plot" : false,
      "site_printout" : false,
-     "entrez_email" : "YOUR@EMAIL.ADDRESS",
-     "entrez_apikey" : "YOUR_API_KEY [remove entry if you don't have one]",
+     "entrez_email" : "tu06379@umbc.edu",
+     "entrez_apikey" : "",
      "sleep" : 1.5,
      "TF_eval" : 0.00000000001,
      "homolog_eval" : 0.1,
