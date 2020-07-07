@@ -104,7 +104,8 @@ def filter(selected_taxon, orthologs, sleepy, log):
             
             orthologs[ortholog]['taxonomy'] = selected_name
             
-            
+            print 'The ' + selected_taxon + ' for ' + ortholog\
+                + ' is ' + selected_name
         else:
     
             for taxon_rank in taxon_record[0]['LineageEx']:
@@ -115,8 +116,8 @@ def filter(selected_taxon, orthologs, sleepy, log):
     
                     orthologs[ortholog]['taxonomy'] = selected_name
                     
-                    print 'The ' + selected_taxon + ' for ' + ortholog\
-                        + ' is ' + selected_name
+                print 'The ' + selected_taxon + ' for ' + ortholog\
+                    + ' is ' + selected_name
         
         if orthologs[ortholog]['taxonomy']:
             
