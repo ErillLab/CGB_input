@@ -134,7 +134,8 @@ def genome_record_retrieval(ortholog_acc, sleepy, log_dir):
 
         return None
 
-def contig_accessions(nuc_record_acc, nuc_record_score, sleepy):
+
+def contig_accessions(nuc_record_acc, nuc_record_score, log_dir, sleepy):
     """
         This function receives a nucleotide record accession and its
         prioritization score.
@@ -189,7 +190,7 @@ def contig_accessions(nuc_record_acc, nuc_record_score, sleepy):
 
         log_file[nuc_record_acc] = "initial nucleotide record couldn't be " \
                                    "retrieved by efetch"
-                                   
+                        
         return None
 
     sp_name = prettyeze_spname(nuc_rec[0]['GBSeq_definition'])
@@ -258,7 +259,7 @@ def contig_accessions(nuc_record_acc, nuc_record_score, sleepy):
                             'unsuccessful; using only the nucleotide ' \
                             'accession identified through genome retrieval.'
 
-                        return sp_name, nuc_record_acc
+                        return sp_name, None
 
             else:
 
@@ -267,18 +268,18 @@ def contig_accessions(nuc_record_acc, nuc_record_score, sleepy):
                       ' unsuccessful; using only the nucleotide accession' \
                       ' identified through genome retrieval.'
 
-                return sp_name, nuc_record_acc
+                return sp_name, None
 
         else:
 
             print '*** Warning: attempt to get all genomes from either ' \
                   'BioProject or BioSample Databasaes for ' + \
-                  nuc_record_acc + ' proved unsuccessful; using only the ' \
-                                   'nucleotide accession identified through genome ' \
-                                   'retrieval.'
+                   nuc_record_acc + ' proved unsuccessful; using only the ' \
+                   'nucleotide accession identified through genome ' \
+                   'retrieval.'
 
-            # return only the accession, as it was given
-            return sp_name, nuc_record_acc
+            # return None
+            return sp_name, None
 
         # Check genome records returned in Id_list. If the original genome record
         # is a refseq record, grab only refseq records. If the original
