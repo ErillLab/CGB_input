@@ -72,7 +72,7 @@
         "min_cover": 0.8,
         "sleepy": 0.5,
         "TF_family": "LexA",
-        "outputfile_name": "pseudo_test_100hits.json"
+        "outputfile_name": "pseudo_test_750hits.json"
     },
     "cgb_parameters": {
         "prior_regulation_probability": 0.03,
