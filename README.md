@@ -1,7 +1,7 @@
 # `CGB_input`
 A script to create a [`cgb`](https://github.com/ErillLab/cgb) ready input file
 ## About
-`cgb_input_generator` exists to create and populate a correctly formatted JSON file, complete with all necessary information required to successfully initiate an analysis of a transcription factor, or group of related transcripted factors, with `cgb`: *a python library for comparative genomics of transcriptional regulation in Bacteria*.
+`CGB_input` exists to create and populate a correctly formatted JSON file, complete with all necessary information required to successfully initiate an analysis of a transcription factor, or group of related transcripted factors, with `cgb`: *a python library for comparative genomics of transcriptional regulation in Bacteria*.
 
 Upon completion of a successful input file generation, the resulting JSON file will be both `cgb` and human readable. Human readability facilitates the option to make last minute minor adjustments to the generated file with no need to repeat the entire process.
 ## Getting Started
